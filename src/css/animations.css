@@ -1,0 +1,63 @@
+/* Button */
+.message-animation {
+  transition-property: height;
+  transition-duration: 0.1s;
+}
+
+/* Chat */
+.chat__open:hover {
+  cursor: pointer;
+  transform: scale(1.3, 1.3);
+  transition: transform 0.1s;
+}
+.chat_animation {
+  animation-name: fade;
+  animation-timing-function: forwards;
+  animation-duration: 0.1s;
+}
+@keyframes fade {
+ 0% {
+   opacity: 0;
+   transform: scale(0.8, 0.8);
+ }
+ 100% {
+   opacity: 1;
+   transform: scale(1, 1);
+ }
+}
+
+/* Like */
+.like-animation {
+  animation-name: likeGain;
+  animation-timing-function: forwards;
+  animation-duration: 0.8s;
+  left: 0;
+}
+@keyframes likeGain1 {
+  0% { bottom: 0; opacity: 1; }
+ 25% { left: -30px; }
+ 50% { left: 0; }
+ 75% { left: 30px; }
+ 100% { left: 0; bottom: 200px; opacity: 0; }
+}
+@keyframes likeGain2 {
+  0% { bottom: 0; opacity: 1; }
+ 25% { left: 0; }
+ 50% { left: 30px; }
+ 75% { left: -30px; }
+ 100% { left: 0; bottom: 200px; opacity: 0; }
+}
+@keyframes likeGain3 {
+  0% { bottom: 0; opacity: 1; }
+ 25% { left: 0; }
+ 50% { left: -30px; }
+ 75% { left: 30px; }
+ 100% { left: 0; bottom: 200px; opacity: 0; }
+}
+@keyframes likeGain4 {
+  0% { bottom: 0; opacity: 1; }
+ 25% { left: 30px; }
+ 50% { left: 0; }
+ 75% { left: -30px; }
+ 100% { left: 0; bottom: 200px; opacity: 0; }
+}
